@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Support Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Support Chat</h1>
+        <span id="status">● Online</span>
+    </header>
+
+    <section id="login">
+        <h2>Start a conversation</h2>
+        <input id="name" placeholder="Enter your name">
+        <button onclick="joinChat()">Join Chat</button>
+    </section>
+
+    <section id="chat" class="hidden">
+        <div id="messages"></div>
+        <form id="messageForm">
+            <input id="message" autocomplete="off" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
