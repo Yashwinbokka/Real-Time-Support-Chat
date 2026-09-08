@@ -29,3 +29,6 @@ A simple medium-sized real-time customer support chat project built with Flask a
    http://127.0.0.1:5000
 
 To test real-time chat, open the address in two browser tabs and join with different names.
+
+Name: Bokka Yashwin
+Intern ID: CITS8953
